@@ -1,0 +1,15 @@
+<div class="top-level">
+  <div class="heading">
+    <h1>Picture Palette</h1>
+    <p>Photos provided by <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash.com</a> and
+      palette picker powered by <a href="https://github.com/akfish/node-vibrant/" target="_blank"
+        rel="noopener noreferrer">Node-Vibrant</a></p>
+  </div>
+
+
+  <div class="cards">
+    <div class="card" *ngFor="let photo of photos">
+      <app-card [photo]="photo"></app-card>
+    </div>
+  </div>
+</div>
