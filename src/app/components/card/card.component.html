@@ -1,0 +1,45 @@
+<div class="card">
+  <div class="card__header">
+    <picture class="card__avatar" [ngStyle]="{'border-color': photo.color}" >
+      <source media="(max-width: 415px)" srcset="{{photo.user.profile_image.medium}}">
+      <source media="(min-width: 416px)" srcset="{{photo.user.profile_image.large}}">
+      <img src="{{photo.user.profile_image.large}}" alt="{{photo.user.username}}">
+    </picture>
+    <h4><a target="_blank" rel="noopener noreferrer" href="{{photo.user.links.self}}">@{{photo.user.username}}</a></h4>
+  </div>
+
+  <picture class="card__image">
+    <source media="(max-width: 415px)" srcset="{{photo.urls.small}}">
+    <source media="(min-width: 416px)" srcset="{{photo.urls.regular}}">
+    <img src="{{photo.urls.regular}}" alt="{{photo.alt_description}}">
+
+    <div [@listAnimation]="colors.length" class="colors">
+      <p *ngFor="let color of colors"
+        [ngStyle]="{'background-color': color?.hex, 'color' : color?.titleTextColor }"> hex:{{ color?.hex }}</p>
+    </div>
+
+  </picture>
+
+  <div class="card__footer">
+    <div *ngIf="photo?.sponsorship">
+      <p class="bold">Sponsored by <a target="_blank" rel="noopener noreferrer" href="{{ photo.sponsorship.sponsor.links.self}}">{{photo.sponsorship.sponsor.username}}</a></p>
+      <p>{{photo.sponsorship.tagline}}</p>
+    </div>
+
+    <button (click)="toggle()" class="button" [ngClass]="{ 'on': isShowing}" [disabled]="disabled">
+      <div class="text">
+        <span class="show">Show</span> <span class="hide">Hide</span> Palette
+      </div>
+      <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path class="one" d="M0 0h24v24H0V0z" fill="none" />
+          <path class="background" d="M15.22 4.75L7.87 7.79l4.96 11.96 7.35-3.05-4.96-11.95zM11 10c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"
+            opacity=".3" />
+          <path class="border1" d="M3.87 11.18l-2.43 5.86c-.41 1.02.08 2.19 1.09 2.61l1.34.56v-9.03zm18.16 4.77L17.07 3.98c-.31-.75-1.04-1.21-1.81-1.23-.26 0-.53.04-.79.15L7.1 5.95c-.75.31-1.21 1.03-1.23 1.8-.01.27.04.54.15.8l4.96 11.97c.31.76 1.05 1.22 1.83 1.23.26 0 .52-.05.77-.15l7.36-3.05c1.02-.42 1.51-1.59 1.09-2.6zm-9.2 3.8L7.87 7.79l7.35-3.04h.01l4.95 11.95-7.35 3.05z" />
+          <circle class="dot" cx="11" cy="9" r="1" />
+          <path class="border2" d="M9.33 21.75l-3.45-8.34v6.34c0 1.1.9 2 2 2h1.45z" />
+        </svg>
+      </div>
+    </button>
+  </div>
+</div>

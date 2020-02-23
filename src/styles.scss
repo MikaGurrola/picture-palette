@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './assets/lib-styles/abstract/variables';
+
+@import './assets/lib-styles/base/reset';
+@import './assets/lib-styles/base/typography';
+
+
+@import './assets/lib-styles/components/buttons';
+@import './assets/lib-styles/components/inputs';
+@import './assets/lib-styles/components/footer';
+
+@import './assets/lib-styles/helpers/shadows';
+@import './assets/lib-styles/helpers/grid';

@@ -1,0 +1,32 @@
+body {
+  // base  color
+  --base1: #fafafa;
+  --base2: #e0e0e0;
+  --base3: #9e9e9e;
+  --baseDark1: #757575;
+  --baseDark2: #494949;
+  --baseDark3: #212121;
+  --base: #212121;
+  
+
+  // NEON color
+  --primary1: #768fff;
+  --primary2: #2962ff;
+  --primary3: #0039cb;
+  // FF3D00
+
+
+  @media (prefers-color-scheme: dark) {
+    --base1: #212121;
+    --base2: #484848;
+    --base3: #424242;
+    --baseDark1: #9e9e9e;
+    --baseDark2: #707070;
+    --baseDark3: #373737;
+
+
+    --primary1: #0039cb;
+    --primary2: #2962ff;
+    --primary3: #768fff;
+  }
+}

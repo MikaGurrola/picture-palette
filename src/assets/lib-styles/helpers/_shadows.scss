@@ -1,0 +1,83 @@
+// body {
+//   --base-shadow: inset 0px 0px 0px var(--base3),
+//   inset 0px 0px 0px var(--base1),
+//   4px 4px 9px var(--base3),
+//   -4px -4px 9px var(--base1);
+
+//   --base-shadow-active: inset 4px 4px 9px var(--base3),
+//   inset -4px -4px 6px var(--base1),
+//   2px 2px 9px var(--base3),
+//   -2px -2px 9px var(--base1);
+
+//   --base-shadow-neutral: inset 0px 0px 0px var(--base3),
+//   inset 0px 0px 0px var(--base1),
+//   4px 4px 16px var(--base2),
+//   -4px -4px 16px var(--base2);
+
+//   --base-shadow-neutral-active: inset 2px 2px 6px var(--base3),
+//   inset -2px -2px 6px var(--base1),
+//   2px 2px 6px var(--base3),
+//   -2px -2px 6px var(--base1);
+
+
+//   // primary shadows
+//   --primary-shadow: inset 0px 0px 0px var(--primary3),
+//   inset 0px 0px 0px var(--primary1),
+//   4px 4px 9px var(--primary3),
+//   -4px -4px 9px var(--primary1);
+
+//   --primary-shadow-active: inset 4px 4px 9px var(--primaryDark1),
+//   inset -4px -4px 6px var(--primary2),
+//   2px 2px 9px var(--primaryDark1),
+//   -2px -2px 9px var(--primary1);
+
+//   --primary-shadow-neutral: inset 0px 0px 0px var(--primary3),
+//   inset 0px 0px 0px var(--primary1),
+//   4px 4px 16px var(--primary2),
+//   -4px -4px 16px var(--primary2);
+
+//   --primary-shadow-neutral-active: inset 2px 2px 6px var(--primary3),
+//   inset -2px -2px 6px var(--primary1),
+//   2px 2px 6px var(--primary3),
+//   -2px -2px 6px var(--primary1);
+
+
+//   --shadow-transition: all 0.25s cubic-bezier(.17, .67, .83, .67);
+
+
+//   --text-shadow: 
+//     -0.6px -0.6px 0px var(--baseDark1),
+//     0.6px -0.6px 0px var(--baseDark1),
+//     0.6px 0.6px 0px var(--baseDark1),
+//     -0.6px 0.6px 0px var(--baseDark1)
+//   ;
+
+
+//   // input shadows 
+//   --input-shadow: 
+//     2px 2px 9px var(--base3),
+//     -2px -2px 9px var(--base1)
+//   ;
+
+//   --input-shadow-active: 
+//     inset 2px 2px 6px var(--base3),
+//     inset -2px -2px 6px var(--base1),
+//     1px 1px 6px var(--base3),
+//     -1px -1px 6px var(--base1)
+//   ;
+
+//   --input-shadow-valid: 
+//     inset 2px 2px 4px var(--base3),
+//     inset -2px -2px 4px var(--base1),
+//     1px 1px 6px var(--base3),
+//     -1px -1px 6px var(--base1)
+//   ;
+
+//   --input-radio-inner-valid: 
+//     inset 2px 2px 4px var(--base3),
+//     inset -2px -2px 4px var(--base1),
+//     1px 1px 4px var(--base3),
+//     -1px -1px 4px var(--base1)
+//   ;
+
+// }

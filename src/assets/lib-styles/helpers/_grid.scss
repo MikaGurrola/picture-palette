@@ -1,0 +1,25 @@
+.container, .column {
+  display: grid;
+  grid-gap: 20px;
+  &--center {
+    justify-content: center;
+  }
+}
+
+
+.column {
+  grid-gap: 20px;
+  .button {
+    margin: 10px auto 0 0;
+  }
+}
+
+.container {
+  padding: 150px 100px 20px 100px;
+  @media screen and (max-width: 1200px) {
+    padding: 150px 20px 20px 20px;
+  }
+  @media screen and (max-width: 414px) {
+    padding: 50px 20px 20px 20px;
+  }
+}
