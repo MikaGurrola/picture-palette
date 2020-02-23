@@ -1,0 +1,77 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  --main-font: Helvetica, Arial, sans-serif;
+  --heading-font: Garamond, "Times New Roman", serif;
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+h1, h3 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 80px;
+
+  @media screen and (max-width: 860px) {
+    font-size: 50px;
+    line-height: 66px;
+  }
+
+  @media screen and (max-width: 670px) {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: bold;
+
+  @media screen and (max-width: 560px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+
+
+h3 {
+  font-family: var(--main-font);
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bold;
+
+  @media screen and (max-width: 560px) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+::selection {
+  color: var(--base2);
+  background: var(--baseDark2);
+}
+
+// Historiated initial
+.hi {
+  font-size: 40px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  display: inline-block;
+  padding: 7px 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
