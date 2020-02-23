@@ -36,9 +36,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
       if (olderThan24Hrs) {
         this.getPhotos();
       }
+      this.cd.detectChanges();
 
     } else {
-      this.updateLocalStorage();
+      this.getPhotos();
     }
   }
 
@@ -57,8 +58,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
       .then(json => {
         this.photos = [...json];
         this.updateLocalStorage();
+        this.cd.detectChanges();
       })
-    this.cd.detectChanges();
   }
 
   updateLocalStorage() {
